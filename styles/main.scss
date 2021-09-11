@@ -11,6 +11,37 @@ $section-phone:10px 20px;
     align-items: center;
     flex-direction: $direction;
 }
+@mixin sectionWrapper {
+    width: 100%;
+   min-height: 100vh;
+    padding: $section-laptop;
+    
+}
+html{
+    scroll-behavior: smooth;
+    
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: $primary;
+    }
+}
+.section-title{
+    
+        font-family: Bold;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        @media (max-width:600px) {
+            margin: 30px;
+            font-size: 30px;
+        }
+    }
+
 @import "fonts";
 @import "landing-page";
 @import "about-me";
+@import "skills";
+@import "project";
+@import "contacts";

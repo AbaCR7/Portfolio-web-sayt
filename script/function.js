@@ -50,7 +50,7 @@ const personalInfo=[
             let nameDiv=document.createElement("div")
 
             boxDiv.setAttribute("class","box")
-            amountDiv.setAttribute("class","amount")
+            amountDiv.setAttribute("class","amount slowNumber")
             nameDiv.setAttribute("class","name")
 
             amountDiv.innerText=i.amount

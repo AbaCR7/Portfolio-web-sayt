@@ -5,17 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script/slowNumber.js"></script>
     <script  defer src="./script/function.js"></script>
+    <script defer src="./script/skills.js"></script>
+    <script defer src="./script/landing.js"></script>
     <title>Abror Hoshimov</title>
 </head>
 <body>
-    <div class="landing-page">
-        <div class="header">
+    <!-- landing page start -->
+    <div class="landing-page" id="home">
+        <div class="header" id="header">
             <div class="logo">abror.</div>
-            <div class="icon">
+            <div class="icon" id="icons" onclick="showMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <a href="#home" onclick="showMenu()"><li>Home</li></a>
+                    <a href="#about" onclick="showMenu()"><li>About Me</li></a>
+                    <a href="#skills" onclick="showMenu()"><li>Skill</li></a>
+                    <a href="#portfolio" onclick="showMenu()"><li>Portfolio</li></a>
+                    <a href="#contacts" onclick="showMenu()"><li>Contacts</li></a>
+                </ul>
             </div>
         </div>
         <div class="left">
@@ -26,17 +39,20 @@
                 I'm Abror Hoshimov
             </div>
             <div class="buttons">
-                <button>MORE ABOUT ME</button>
-                <button>HIRE ME</button>
+                <a href="#about"><button>MORE ABOUT ME</button></a>
+                <a href="#"><button>HIRE ME</button></a>
             </div>
         </div>
         
         <div class="right"> 
-            <img src="./images/photo_2021-09-08_13-40-55-removebg-preview.png" alt="">
+            <img src="./images/men.png" alt="">
         </div>
     </div>
-    <div class="about-me">
-        <div class="title">About Me</div>
+    <!-- landing page end -->
+    
+    <!-- about me start  -->
+    <div class="about-me" id="about">
+        <div class="section-title">About Me</div>
 
         <div class="content-wrapper">
             <div class="left" id="about-me-statistics"></div>
@@ -46,13 +62,86 @@
                     Java Spring and React Js Developer based in Tashkent
                 </div>
                 <div class="summary">
-                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts.
+                    I study at the PDP academy in Tashkent.
+                    The future begins here
                 </div>
                 <div class="pesonal-information-wrapper" id="personal-information"></div>
-                <a href="./Gray and Black Professional Resume.pdf" class="cv-dovnload" download>Download CV </a>
+                <a href="./Gray and Black Professional Resume (2).pdf" class="cv-dovnload" download>Download CV </a>
             </div>
         </div>
     </div>
+    <!-- about me end -->
+    
+    <!-- skills start -->
+        <div class="skills" id="skills">
+            <div class="section-title">My Skills</div>
+            <div class="skills-wrapper" id="skills-wrapper">
+
+            </div>
+        </div>
+
+    <!-- skills end -->
+
+    <!-- project start -->
+    <div class="projects" id="portfolio">
+        <div class="section-title">Portfolio</div>
+        <div class="project-wrapper">
+           <div class="project">
+               <div class="overlay">
+                   <div class="name">Portfolio web-site</div>
+                   <div class="links">
+                       <a href="https://github.com/AbaCR7/Portfolio-web-sayt">
+                            <img src="./images/github.png" alt="">
+                        </a>
+                        <a href="#"> 
+                            <img src="./images/png-clipart-black-logo-computer-icons-web-page-world-wide-web-web-design-globe.png" alt="">
+                        </a>
+                   </div>
+               </div>
+           </div>
+           <div class="project">
+            <div class="overlay">
+                <div class="name">Portfolio web-site</div>
+                <div class="links">
+                    <a href="https://github.com/AbaCR7/Portfolio-web-sayt">
+                         <img src="./images/github.png" alt="">
+                     </a>
+                     <a href="#"> 
+                         <img src="./images/png-clipart-black-logo-computer-icons-web-page-world-wide-web-web-design-globe.png" alt="">
+                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="overlay">
+                <div class="name">Portfolio web-site</div>
+                <div class="links">
+                    <a href="https://github.com/AbaCR7/Portfolio-web-sayt">
+                         <img src="./images/github.png" alt="">
+                     </a>
+                     <a href="#"> 
+                         <img src="./images/png-clipart-black-logo-computer-icons-web-page-world-wide-web-web-design-globe.png" alt="">
+                     </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- project end -->
+
+    <!-- contact start -->
+    <div class="contacts" id="contacts">
+        <br>
+        <div class="section-title">Follow Me Around </div>
+        <div class="social-icons">
+            <a href="#" ><img src="./images/facebook.png" alt=""></a>
+            <a href="#"><img src="./images/instagram.png" alt=""></a>
+            <a href="#"><img src="./images/linkedin.png" alt=""></a>
+            <a href="https://t.me/AbaHoshimov" target="blank"><img src="./images/telegram.png" alt=""></a>
+            <a href="#"><img src="./images/twitter.png" alt=""></a>
+        </div>
+    </div>
+    <!-- contact end -->
+
 </body>
 </html>

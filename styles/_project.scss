@@ -1,0 +1,61 @@
+.projects{
+    @include sectionWrapper();
+    .project-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        @media (max-width:1000px){
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        @media (max-width:600px){
+            grid-template-columns: 1fr ;
+            
+        }
+        .project{
+            width: 100%;
+            height: 200px;
+            background-image: url("../images/Без\ названия.jpg");
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            .overlay{
+                width: 100%;
+                height: 100%;
+                background: rgba($color : $primary, $alpha: 0.9);
+                display: none;
+                position: relative;
+
+                .name{
+                    color: white;
+                    font-family: Bold;
+                    font-size: 30px;
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    white-space: nowrap;
+                }
+                .links{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    position: absolute;
+                    top: 60%;
+                    left: 40%;
+                    img{
+                        width: 30px;
+                    }
+                }
+                
+            }
+            &:hover{
+                .overlay{
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
